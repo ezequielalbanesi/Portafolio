@@ -1,4 +1,12 @@
 
+:root{
+  --Color1:#060606;
+  --Color2:#1c262d;
+  --Color3:#3e5263;
+  --Color4:#65869e;
+  --Color5:#91bfdc;
+}
+
 * {
   padding: 0;
   margin: 0; }
@@ -76,7 +84,8 @@ nav ul li a{
   margin: 0 3rem;
   position: relative;
   letter-spacing: 2px;
-  font-size: 2rem;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 3rem;
 }
 
 nav ul li a:last-child{
@@ -88,8 +97,8 @@ nav ul li a::after{
   content: '';
   position: absolute;
   width: 100%;
-  height: 2px;
-  background-color: black;
+  height: .2rem;
+  background-color: white;
   left: 0;
   transform: scaleX(0);
   transition: all .5s;
@@ -117,7 +126,46 @@ nav ul li a:hover::after{
     transform: translateX(0);
   }
 }
+.textoImagen{
+  display: flex;
+  width: 50%;
+  height: 50rem;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+h2{
+  color: white;
+  font-size: 6rem;
+  font-weight: 700;
+  font-family: 'Noto Serif', serif;
 
+}
+p{
+  color: white;
+  font-size: 4rem;
+  font-family: 'Bebas Neue', cursive;
+}
+.contenedorConocimientos{
+  height: 25rem;
+  color: white;
+  background-color: #1c262d;
+}
+.tituloConocimientos{
+  font-size: 5rem;
+  padding-top: 2rem;
+  margin-bottom: 4rem;
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Noto Serif', serif;
 
-
-
+}
+.contenedorImagenConocimientos{
+  display: flex;
+  justify-content: space-evenly;
+}
+.imagenConocimientos{
+  height: 8rem;
+  width: 8rem;
+}
